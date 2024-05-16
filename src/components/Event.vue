@@ -43,7 +43,7 @@ export default {
           formData.append('photos', photo);
         });
 
-        const response = await axios.post('http://localhost:3000/addevent', formData, {
+        const response = await axios.post('http://51.75.133.118:3000/addevent', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }

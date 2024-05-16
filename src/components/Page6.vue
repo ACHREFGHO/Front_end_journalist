@@ -6,7 +6,7 @@
             <div class="article-overlay">
               <h2 class="article-title">{{ article.articleInfo.title }}</h2>
             </div>
-            <img :src="'http://localhost:3000/articles/' + article.articleInfo.id + '/' + article.articleInfo.photo" :alt="article.articleInfo.photo" class="article-image">
+            <img :src="'http://51.75.133.118:3000/articles/' + article.articleInfo.id + '/' + article.articleInfo.photo" :alt="article.articleInfo.photo" class="article-image">
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
     },
     methods: {
       fetchArticles() {
-        axios.get('http://localhost:3000/Getarticle')
+        axios.get('http://51.75.133.118:3000/Getarticle')
           .then(response => {
             // Filter articles based on the types
             this.articles = response.data.filter(article => article.articleInfo.types.includes('أخبار متفرقة'));

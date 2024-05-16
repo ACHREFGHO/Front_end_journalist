@@ -67,7 +67,7 @@ export default {
         formData.append('photo', this.photo);
         formData.append('types', this.selectedTypes.join(',')); // Convert array to comma-separated string
 
-        const response = await axios.post('http://localhost:3000/upload', formData, {
+        const response = await axios.post('http://51.75.133.118:3000/upload', formData, {
           headers: {
             'Content-Type': 'multipart/form-data'
           }

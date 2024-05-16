@@ -7,7 +7,7 @@
             <h2 class="article-title">{{ article.articleInfo.title }}</h2>
             <button @click="deleteArticleConfirmation(article)" class="delete-button">Delete</button>
           </div>
-          <img :src="'http://localhost:3000/articles/' + article.articleInfo.id + '/' + article.articleInfo.photo" :alt="article.articleInfo.photo" class="article-image">
+          <img :src="'http://51.75.133.118:3000/articles/' + article.articleInfo.id + '/' + article.articleInfo.photo" :alt="article.articleInfo.photo" class="article-image">
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     fetchArticles() {
-      axios.get('http://localhost:3000/Getarticle')
+      axios.get('http://51.75.133.118:3000/Getarticle')
         .then(response => {
           this.articles = response.data;
         })
@@ -59,7 +59,7 @@ export default {
 },
 
     deleteArticle(articleId) {
-      axios.delete(`http://localhost:3000/delarticle/${articleId}`)
+      axios.delete(`http://51.75.133.118:3000/delarticle/${articleId}`)
         .then(response => {
           // Remove the deleted article from the local array
           this.articles = this.articles.filter(article => article.id !== articleId);

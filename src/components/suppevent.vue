@@ -8,7 +8,7 @@
         </div>
         <div v-if="event.showImages" class="event-images">
           <div class="image-container">
-            <img v-for="(image, index) in event.images" :key="index" :src="'http://localhost:3000/' + image" :alt="event.eventInfo.title + ' Image ' + (index + 1)">
+            <img v-for="(image, index) in event.images" :key="index" :src="'http://51.75.133.118:3000/' + image" :alt="event.eventInfo.title + ' Image ' + (index + 1)">
           </div>
           <p v-if="event.images.length === 0" class="no-images">No images available for this event.</p>
         </div>
@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     getAllEvents() {
-      axios.get('http://localhost:3000/Getevent')
+      axios.get('http://51.75.133.118:3000/Getevent')
         .then(response => {
           this.events = response.data.map(event => {
             const images = event.images || [];
@@ -54,7 +54,7 @@ export default {
       }
     },
     deleteEvent(eventId) {
-      axios.delete(`http://localhost:3000/delevent/${eventId}`)
+      axios.delete(`http://51.75.133.118:3000/delevent/${eventId}`)
         .then(response => {
           // Remove the deleted event from the local array
           this.events = this.events.filter(event => event.eventInfo.id !== eventId);
