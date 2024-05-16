@@ -97,8 +97,8 @@ export default {
 
 .article-image {
   width: 100%;
-  height: 100%; /* Ensure the image fills the container */
-  object-fit: cover; /* Maintain aspect ratio */
+  height: 100%;
+  object-fit:fill; /* This will maintain the aspect ratio and cover the entire container */
   border-radius: 10px;
 }
 

@@ -91,8 +91,8 @@ min-height: 100vh;
 }
 
 .logo-image {
-  width: 130px;
-  height: 70px;
+  width: 140px;
+  height: 90px;
   max-width: 100%;
   height: auto;
   margin: 10px;
