@@ -1,4 +1,5 @@
 <template>
+  
   <div>
     <div class="articles-container">
       <div v-for="article in articles" :key="article.id" class="article">

@@ -1,6 +1,7 @@
   
  <template>
-  <div id="app" class="full-height" style="margin: 0;">
+
+<div id="app" class="full-height" style="margin: 0;">
     <nav class="navbar">
       <div class="logo">
         <router-link to="/">
