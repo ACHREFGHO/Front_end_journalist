@@ -42,15 +42,15 @@ export default {
   },
   data() {
     return {
-      navLinks: [
-        { text: 'الأخبار الوطنية', route: '/page1' },
-        { text: 'الأخبار العالمية', route: '/page2' },
-        { text: 'كرة اليد', route: '/page3' },
-        { text: 'كرة السلة', route: '/Page4' },
-        { text: 'كرة الطائرة', route: '/page5' },
-        { text: 'أخبار متفرقة', route: '/page6' },
-        { text: 'صور', route: '/page7' }
-      ],
+         navLinks: [
+  { text: 'صور', route: '/page7' },
+  { text: 'أخبار متفرقة', route: '/page6' },
+  { text: 'كرة الطائرة', route: '/page5' },
+  { text: 'كرة السلة', route: '/Page4' },
+  { text: 'كرة اليد', route: '/page3' },
+  { text: 'الأخبار العالمية', route: '/page2' },
+  { text: 'الأخبار الوطنية', route: '/page1' }
+],
     };
   },
 };
